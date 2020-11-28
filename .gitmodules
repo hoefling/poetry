@@ -1,0 +1,3 @@
+[submodule "poetry-pubgrub-rs"]
+	path = poetry-pubgrub-rs
+	url = git@github.com:MrGreenTea/poetry-pubgrub-rs.git
