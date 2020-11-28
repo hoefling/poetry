@@ -53,13 +53,17 @@ httpretty = "^1.0"
 zipp = { version = "^3.4", python = "<3.8"}
 # temporary workaround for https://github.com/python-poetry/poetry/issues/3404
 urllib3 = "1.25.10"
+setuptools-rust = "^0.11.5"
 
 [tool.poetry.scripts]
 poetry = "poetry.console:main"
 
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0", "setuptools-rust>=0.11.5"]
 build-backend = "poetry.core.masonry.api"
 
 
